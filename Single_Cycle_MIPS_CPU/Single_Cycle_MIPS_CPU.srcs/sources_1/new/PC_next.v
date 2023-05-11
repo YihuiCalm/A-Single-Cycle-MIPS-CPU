@@ -27,9 +27,9 @@ module PC_next(
 	input shift_enable,
 	input jump_enable,
 	
-	output [31:0] next
+	output [31:0] next_PC
     );
     
-    assign next = shift_enable? (address + 32'd4 + shift_offset<<2): (jump_enable? jump_addressa: address + 32'd4);
+    assign next_PC = shift_enable? (address + 32'd4 + shift_offset<<2): (jump_enable? jump_address: address + 32'd4);
     
 endmodule

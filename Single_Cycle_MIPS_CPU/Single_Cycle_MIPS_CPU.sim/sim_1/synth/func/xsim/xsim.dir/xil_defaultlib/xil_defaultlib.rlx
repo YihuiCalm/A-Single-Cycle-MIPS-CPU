@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.sim/sim_1/synth/func/xsim/PC_func_synth.v,1683839190,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v,,ALU;CPU_top;PC;PC_next;data_MEM;glbl;register_MEM,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v,1683837512,verilog,,,,CPU_top_tb,,,,,,,,

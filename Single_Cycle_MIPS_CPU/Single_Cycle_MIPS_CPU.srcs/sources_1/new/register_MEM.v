@@ -21,6 +21,7 @@
 
 
 module register_MEM(
+	input clk,
 	input [4:0] read_register_1,
 	input [4:0] read_register_2,
 	input [4:0] write_register,
@@ -31,17 +32,20 @@ module register_MEM(
 	output [31:0] register_2
     );
     
-    reg [4:0] registers [31:0] = 0;
-    
-    always @(*) begin
-    	if (write_enable) begin
-    		registers[write_register] = write_data;
+    reg [31:0] registers [4:0];
+    integer i;
+    initial begin
+    	for (i=0;i<5;i=i+1) begin
+    		registers[i] = 0;
     	end
-    	else registers = registers;
     end
     
-    assign read_register_1 = register[read_register_1];
-    assign read_register_1 = register[read_register_2];
+    always @(posedge clk) begin
+    	if (write_enable) registers[write_register] = write_data;
+    end
+    
+    assign register_1 = registers[read_register_1];
+    assign register_2 = registers[read_register_2];
     
     
 endmodule

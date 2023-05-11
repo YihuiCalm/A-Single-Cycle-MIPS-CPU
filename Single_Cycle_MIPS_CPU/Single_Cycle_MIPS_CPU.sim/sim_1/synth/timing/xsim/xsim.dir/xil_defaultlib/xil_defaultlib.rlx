@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.sim/sim_1/synth/timing/xsim/CPU_top_tb_time_synth.v,1683845810,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v,,ALU;CPU_top;PC;PC_next;RAM32M_HD53;RAM32M_HD54;RAM32M_HD55;RAM32M_HD57;RAM32M_HD58;RAM32M_HD59;RAM32M_HD60;RAM32M_HD61;RAM32M_HD64;RAM32M_UNIQ_BASE_;RAM32X1D_HD56;RAM32X1D_HD62;RAM32X1D_HD63;RAM32X1D_UNIQ_BASE_;RAM32X1S_HD52;RAM32X1S_UNIQ_BASE_;data_MEM;glbl;register_MEM,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v,1683845906,verilog,,,,CPU_top_tb,,,,,,,,

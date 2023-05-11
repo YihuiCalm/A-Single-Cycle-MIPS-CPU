@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.sim/sim_1/synth/func/xsim/PC_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_next
+INFO: [VRFC 10-311] analyzing module data_MEM
+INFO: [VRFC 10-311] analyzing module register_MEM
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top_tb
+INFO: [VRFC 10-2458] undeclared symbol op_type, assumed default net type wire [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v:35]

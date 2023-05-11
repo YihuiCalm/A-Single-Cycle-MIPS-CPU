@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v,1683841982,verilog,,,,CPU_top_tb,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/ALU.v,1683674061,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Instruction_MEM.v,,ALU,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v,1683841885,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Control_unit.v,,CPU_top,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Control_unit.v,1683778399,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v,,Control_unit,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Instruction_MEM.v,1683845693,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/PC.v,,Instruction_MEM,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/PC.v,1683777982,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/PC_next.v,,PC,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/PC_next.v,1683674364,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/data_MEM.v,,PC_next,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/data_MEM.v,1683842629,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/register_MEM.v,,data_MEM,,,,,,,,
+D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/register_MEM.v,1683842310,verilog,,D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v,,register_MEM,,,,,,,,

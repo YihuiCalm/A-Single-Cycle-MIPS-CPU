@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Instruction_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/PC_next.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_next
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/data_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/register_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'inst_addr' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:34]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'read_register_1' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:67]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'read_register_2' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:68]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'write_register' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:69]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg_write_data' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:71]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'op_type' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:89]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'result' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:96]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'mem_read_data' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/CPU_top.v:110]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_unit
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'op_type' is not allowed [D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sources_1/new/Control_unit.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top_tb

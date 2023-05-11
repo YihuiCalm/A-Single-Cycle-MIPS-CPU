@@ -22,15 +22,13 @@
 
 module PC(
 	input clk,
-	input reset,
 	input [31:0] next_address,
 	
 	output reg [31:0] address = 0
     );
     
-    always @(posedge clk, posedge reset) begin
-    	if (reset) address <= 0;
-    	else address <= next_address;
+    always @(posedge clk) begin
+    	address <= next_address;
     end
     
 endmodule

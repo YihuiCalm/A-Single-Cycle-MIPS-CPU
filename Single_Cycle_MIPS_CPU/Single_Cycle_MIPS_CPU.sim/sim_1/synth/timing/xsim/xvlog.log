@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.sim/sim_1/synth/timing/xsim/CPU_top_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32M_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32M_HD53
+INFO: [VRFC 10-311] analyzing module RAM32M_HD54
+INFO: [VRFC 10-311] analyzing module RAM32M_HD55
+INFO: [VRFC 10-311] analyzing module RAM32M_HD57
+INFO: [VRFC 10-311] analyzing module RAM32M_HD58
+INFO: [VRFC 10-311] analyzing module RAM32M_HD59
+INFO: [VRFC 10-311] analyzing module RAM32M_HD60
+INFO: [VRFC 10-311] analyzing module RAM32M_HD61
+INFO: [VRFC 10-311] analyzing module RAM32M_HD64
+INFO: [VRFC 10-311] analyzing module RAM32X1D_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32X1D_HD56
+INFO: [VRFC 10-311] analyzing module RAM32X1D_HD62
+INFO: [VRFC 10-311] analyzing module RAM32X1D_HD63
+INFO: [VRFC 10-311] analyzing module RAM32X1S_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32X1S_HD52
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module CPU_top
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_next
+INFO: [VRFC 10-311] analyzing module data_MEM
+INFO: [VRFC 10-311] analyzing module register_MEM
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github/A-Single-Cycle-MIPS-CPU/Single_Cycle_MIPS_CPU/Single_Cycle_MIPS_CPU.srcs/sim_1/new/CPU_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_top_tb
