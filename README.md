@@ -145,6 +145,7 @@ For there types of instructions, they have formats of 32-bits below:
 ***  
 ## **Single-Cycle CPU Architecture**  
 The Architecture Design references the [CSE378](https://courses.cs.washington.edu/courses/cse378/) of UW:
+![image](https://github.com/YihuiCalm/A-Single-Cycle-MIPS-CPU/assets/96307958/7e28483e-c65b-4df2-938b-59833503e76f)
 
 ***
 ## **Verilog Module Design**
@@ -190,14 +191,14 @@ module CPU_top(
     assign read_register_2 = instruction[20:16];
     assign write_register = (instruction[31:26]==6'b100011)? instruction[20:16]: instruction[15:11];
     assign reg_write_enable = ((instruction[31:26]==6'b101011)|(instruction[31:26]==6'b000100)|(instruction[31:26]==6'b100000))? 1'b0: 1'b1;
-
-	wire [3:0] op_type;
+ 
+    wire [3:0] op_type;
 	
-	wire [31:0] alu_data_2;
+    wire [31:0] alu_data_2;
 	
-	assign alu_data_2 = ((instruction[31:26]==6'b100011)|(instruction[31:26]==6'b101011))? shift_offset: reg_read_data_2;
+    assign alu_data_2 = ((instruction[31:26]==6'b100011)|(instruction[31:26]==6'b101011))? shift_offset: reg_read_data_2;
 	
-	wire mem_write_enable;
+    wire mem_write_enable;
     wire mem_read_enable;
     wire [31:0] mem_read_data;
     
@@ -273,6 +274,7 @@ mem[8] = 32'h08000018; // j 6
 mem[9] = 32'h08000024; // j 9
 ```
 The program will end in a dead loop. The simulation result is as followed:  
+![Screenshot (15)](https://github.com/YihuiCalm/A-Single-Cycle-MIPS-CPU/assets/96307958/f5a546e8-5615-40e8-95c4-a82657b41bce)
 
 
 
