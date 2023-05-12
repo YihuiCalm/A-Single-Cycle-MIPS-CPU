@@ -30,6 +30,6 @@ module PC_next(
 	output [31:0] next_PC
     );
     
-    assign next_PC = shift_enable? (address + 32'd4 + shift_offset<<2): (jump_enable? jump_address: address + 32'd4);
+    assign next_PC = shift_enable? (address + 32'd4 + (shift_offset<<2)): (jump_enable? jump_address: address + 32'd4);
     
 endmodule

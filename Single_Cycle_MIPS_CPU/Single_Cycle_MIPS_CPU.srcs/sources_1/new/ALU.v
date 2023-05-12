@@ -41,11 +41,12 @@ module ALU(
     always @(*) begin
     	case (op_type)
     		Add: result = data_1 + data_2;
-    		Sub: result = -data_1 + data_2;
+    		Sub: result = data_1 - data_2;
     		Or: result = data_1 | data_2;
     		And: result = data_1 & data_2;
     		Slt: result = (data_2 > data_1);
     		Lw,Sw: result = data_1 + data_2;
+    		Beq: result = (data_1 == data_2);
     		default: result = 0;
     	endcase
     end 

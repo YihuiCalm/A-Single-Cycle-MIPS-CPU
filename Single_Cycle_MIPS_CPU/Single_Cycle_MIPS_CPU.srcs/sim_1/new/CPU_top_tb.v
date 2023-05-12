@@ -29,7 +29,7 @@ module CPU_top_tb(
     wire [4:0] read_register_1, read_register_2, write_register;
     wire [3:0] op_type;
     
-    always #50 clk = ~clk;
+    always #10 clk = ~clk;
     
     CPU_top tb_CPU_top(
     	.CLK100MHZ(clk),

@@ -43,12 +43,39 @@ module CPU_top(
     wire shift_enable;
     wire jump_enable;
     wire [31:0] next_PC;
+    wire [31:0] result;
     
     assign shift_offset = {{16{instruction[15]}},instruction[15:0]};
     assign jump_address = {{6{1'b0}},instruction[25:0]};
-    assign shift_enable = (instruction[31:26]==6'b000100);
-    assign jump_enable = (instruction[31:26]==6'b100000);
+    assign shift_enable = (instruction[31:26]==6'b000100)&(result==32'd1);
+    assign jump_enable = (instruction[31:26]==6'b000010);
+    
+    wire [4:0] read_register_1;
+    wire [4:0] read_register_2;
+    wire [4:0] write_register;
+    wire reg_write_enable;
+    wire [31:0] reg_write_data, reg_read_data_1, reg_read_data_2;
+	
+    assign read_register_1 = instruction[25:21];
+    assign read_register_2 = instruction[20:16];
+    assign write_register = (instruction[31:26]==6'b100011)? instruction[20:16]: instruction[15:11];
+    assign reg_write_enable = ((instruction[31:26]==6'b101011)|(instruction[31:26]==6'b000100)|(instruction[31:26]==6'b100000))? 1'b0: 1'b1;
 
+	wire [3:0] op_type;
+	
+	wire [31:0] alu_data_2;
+	
+	assign alu_data_2 = ((instruction[31:26]==6'b100011)|(instruction[31:26]==6'b101011))? shift_offset: reg_read_data_2;
+	
+	wire mem_write_enable;
+    wire mem_read_enable;
+    wire [31:0] mem_read_data;
+    
+    assign mem_write_enable = (instruction[31:26]==6'b101011);
+    assign mem_read_enable = (instruction[31:26]==6'b100011);
+    
+    assign reg_write_data = (instruction[31:26]==6'b100011)? mem_read_data: result;
+    
     PC_next inst_PC_next(
         .address(inst_addr),
         .shift_offset(shift_offset),
@@ -64,17 +91,6 @@ module CPU_top(
         .address(inst_addr)
     );
 
-    wire [4:0] read_register_1;
-    wire [4:0] read_register_2;
-    wire [4:0] write_register;
-    wire reg_write_enable;
-    wire [31:0] reg_write_data, reg_read_data_1, reg_read_data_2;
-	
-    assign read_register_1 = instruction[25:21];
-    assign read_register_2 = instruction[20:16];
-    assign write_register = (instruction[31:26]==6'b100011)? instruction[20:16]: instruction[15:11];
-    assign reg_write_enable = ((instruction[31:26]==6'b101011)|(instruction[31:26]==6'b000100)|(instruction[31:26]==6'b100000))? 1'b0: 1'b1;
-	
     register_MEM inst_register(
         .clk(clk),
         .read_register_1(read_register_1),
@@ -85,18 +101,11 @@ module CPU_top(
         .register_1(reg_read_data_1),
         .register_2(reg_read_data_2)
     );
-    
-    wire [3:0] op_type;
-    
+     
     Control_unit inst_Countrol_unit(
     	.instruction(instruction),
     	.op_type(op_type)
     );
-    
-    wire [31:0] result;
-    wire [31:0] alu_data_2;
-	
-	assign alu_data_2 = ((instruction[31:26]==6'b100011)|(instruction[31:26]==6'b101011))? shift_offset: reg_read_data_2;
 	
     ALU inst_ALU(
         .data_1(reg_read_data_1),
@@ -104,13 +113,6 @@ module CPU_top(
         .op_type(op_type),
         .result(result)
     );
-
-    wire mem_write_enable;
-    wire mem_read_enable;
-    wire [31:0] mem_read_data;
-    
-    assign mem_write_enable = (instruction[31:26]==6'b101011);
-    assign mem_read_enable = (instruction[31:26]==6'b100011);
 
     data_MEM inst_data_MEM(
         .clk(clk),
@@ -122,6 +124,5 @@ module CPU_top(
         .read_data(mem_read_data)
     );
 
-    assign reg_write_data = (instruction[31:26]==6'b100011)? mem_read_data: result;
 
 endmodule
