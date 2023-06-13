@@ -108,7 +108,7 @@ This design only realized basic MIPS32 instructions below:
         <td align="center">PC=address</td>
     </tr>
 </table>  
-For there types of instructions, they have formats of 32-bits below:  
+For three types of instructions, they have formats of 32-bits below:  
 <table>
     <tr>
         <td align="center">Type</td>
